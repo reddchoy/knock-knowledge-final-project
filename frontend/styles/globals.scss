@@ -1,0 +1,102 @@
+$black-color: #000000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $black-color;
+  text-decoration: none;
+  list-style: none;
+  // border: 1px solid #000;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  background: #faf7f6;
+}
+
+hr {
+  border: 1px solid rgba(30, 30, 47, 0.1);
+}
+
+.container {
+  width: 100%;
+  // max-width: 1188px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.dot {
+  font-family: 'Tahoma';
+  color: #2a9d8f;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #faf7f6;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 30, 47, 0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(30, 30, 47, 0.2);
+}
+
+.reactMarkDown h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0 0 24px;
+
+  text-transform: uppercase;
+}
+
+.reactMarkDown h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 36px;
+  margin: 0 0 24px;
+}
+
+.reactMarkDown h3 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
+
+.reactMarkDown h4 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  margin: 0 0 24px;
+}
+
+.reactMarkDown p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px;
+}
+
+.reactMarkDown a {
+  text-decoration: underline;
+}
+
+.reactMarkDown a:hover {
+  text-decoration: underline;
+}

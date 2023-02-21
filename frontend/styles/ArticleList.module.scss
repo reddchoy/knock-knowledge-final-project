@@ -1,0 +1,123 @@
+.articleList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(45%, 1fr));
+  gap: 48px;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.articleImg {
+  width: 100%;
+  height: 240px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 64px 50px -32px rgba(6, 7, 37, 0.03);
+}
+
+.articleImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 60%;
+}
+
+.nameBookmarkContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.articleName {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.ownerDateContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.ownerIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ownerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+#defaultIcon {
+  padding: 8px;
+  font-size: 20px;
+  border: 2px solid;
+  border-radius: 100%;
+}
+
+.ownerName {
+  margin-left: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.imgResize {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.iconResize {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+#bookmarkBtn {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.postDate {
+  color: #666666;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .articleList {
+    grid-template-columns: repeat(2, minmax(45%, 1fr));
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .articleList {
+    grid-template-columns: repeat(1, minmax(100%, 1fr));
+  }
+
+  .articleName {
+    font-size: 24px;
+  }
+
+  .ownerName {
+    font-size: 16px;
+  }
+
+  .postDate {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,70 @@
+.cart {
+  width: 100%;
+
+  section {
+    padding: 60px 0;
+
+    &:last-child {
+      padding: 60px 0 0;
+    }
+  }
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 60px;
+}
+
+.discount {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .discount_title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 16px;
+  }
+
+  .discount_code {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    div {
+      display: flex;
+
+      input {
+        font-size: 16px;
+        padding: 16px;
+        outline: none;
+        border: 0;
+      }
+    }
+
+    p {
+      padding: 8px 16px;
+      color: #e76f51;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .discount {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+
+    .discount_title {
+      align-self: start;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  backend:
+    image:
+    container_name: 
+    links:
+      - 
+    depends_on:
+      - 
+    ports:
+      - 
+    environment:
+      DATABASE_URL: 
+      STRIPE_PRIVATE: 
+      GOOGLE_CLIENT_SECRET: 
+      FRONTEND: 
+      JWT_SECRET: 
+      S3_BUCKET: 
+      S3_REGION: 
+      AWS_ACCESS_KEY_ID:
+      AWS_SECRET_ACCESS_KEY:
+
+  database:
+    image: 
+    container_name: 
+    ports:
+      - 
+    environment:
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
+      POSTGRES_DB: 

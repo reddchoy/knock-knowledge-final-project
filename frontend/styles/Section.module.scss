@@ -1,0 +1,25 @@
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  h2 {
+    color: rgb(38, 70, 83);
+    font-size: 2.25rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section {
+    h2 {
+      font-size: 1.71rem;
+    }
+  }
+}

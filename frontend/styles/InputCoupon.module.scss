@@ -1,0 +1,15 @@
+.container{
+    display:flex;
+    justify-content: space-between;
+}
+.title{
+    margin-bottom: 20px;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .image{
+        display: none;
+    }
+}   

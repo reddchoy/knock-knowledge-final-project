@@ -1,0 +1,141 @@
+.container {
+  margin: 60px 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  .order {
+    display: flex;
+    flex-direction: column;
+    // padding: 36px;
+
+    background: #fff;
+    box-shadow: 0px 7px 29px rgba(6, 7, 37, 0.03);
+
+    .date_status {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 36px 36px 24px;
+      border-bottom: 1px solid #eee;
+
+      &:hover {
+        background: #eee;
+      }
+
+      .date {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        gap: 12px;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      .status_block {
+        padding: 12px 24px;
+        background: #2a9d8f;
+
+        .status {
+          font-size: 16px;
+          font-weight: bold;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .order_list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 36px;
+      border-bottom: 1px solid #eee;
+
+      &:hover {
+        background: #eee;
+      }
+
+      &:last-child {
+        padding: 24px 36px 36px;
+      }
+
+      .image_name {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        .course_image {
+          width: 83px;
+          height: 50px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .name {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+
+      .price {
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    .order {
+      .order_list {
+        .image_name {
+          gap: 12px;
+
+          .name {
+            font-size: 18px;
+          }
+        }
+
+        .price {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    margin: 0;
+    .order {
+      .date_status {
+        flex-direction: column;
+        gap: 24px;
+
+        .date {
+          font-size: 12px;
+        }
+      }
+      .order_list {
+        .image_name {
+          width: 100%;
+          flex-direction: column;
+          align-items: start;
+          gap: 24px;
+        }
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+    }
+  }
+}
